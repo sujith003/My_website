@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About_sujith_website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="website Icon" type="png" href="website.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#internship">Internships</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="darkModeToggle"><i class="fas fa-moon"></i>Dark Mode</button></li>
+    </ul>
+</nav>
+
+ <!-- Home Section -->
+<section id="home" class="home-section">
+    <div class="home-content">
+        <h1 class="neon-text">Welcome To My Digital Home!</h1>
+        <p>Hi,<a class="im"> I'm</a> <strong> SUJITH E </strong></p>
+        <div class="profile-info">
+            <p><i class="fa fa-phone"></i> +91 9361237516</p>
+            <p><i class="fas fa-envelope"></i> sujithe2003@gmail.com</p>
+            <p>
+                <a href="https://www.linkedin.com/in/sujith-e-1b6014252" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                |
+                <a href="https://github.com/sujith003" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </p>
+  
+        </div>
+        <div class="summary-box">
+            <p class="quote">
+                I am a detail-oriented and motivated Fresher seeking an entry-level position as a Full Stack Developer, Python Developer, Web Developer, and Software Developer. With a strong foundational knowledge in <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong>, <strong>React.js</strong>, <strong>Python</strong>, and <strong>SQL</strong>, I am proficient in both front-end and back-end development. I leverage modern frameworks and technologies to create efficient, user-centric applications, focusing on responsive and interactive user interfaces. My strong problem-solving abilities and commitment to continuous learning drive my passion for innovation in software development. I am eager to contribute to dynamic teams and engage in challenging projects that enhance my skills and provide value to users. 
+            </p>
+        </div>
+        
+        <div id="resume-download">
+            <a href="Sujith_Resume.docx" download="Sujith_Resume" class="minimal-btn">
+              Download Resume
+            </a>
+          </div>
+          
+          
+    </div>
+</section>
+
+
+
+
+    <!-- Education Section -->
+<section id="education" class="education-section">
+    <h2>Education</h2>
+    <div class="education-item">
+        <h3>Bachelor of Engineering</h3><hr>
+        <h4>Chennai, India</h4>
+        <h5>June 2020 - June 2024</h5>
+        <p>Major: Computer Science and Engineering</p>
+        <p>College: Jeppiaar Engineering College, Affiliated to Anna University</p>
+        <p>CGPA: 7.89</p>
+        
+        
+    </div>
+    <div class="education-item">
+        <h3>12th Education</h3><hr>
+        <h4>Villupuram, India</h4>
+        <h5>March 2019 - April 2020</h5>
+        <p>School: Government Higher Secondary School</p>
+        <p>Percentage: 64%</p>
+        
+    </div>
+    <div class="education-item">
+        <h3>10th Education</h3><hr>
+        <h4>Villupuram, India</h4>
+        <h5>March 2017 - April 2018</h5>
+        <p>School: Government High School</p>
+        <p>Percentage: 74%</p>
+    </div>
+</section>
+
+
+
+   <!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="skill-list">
+        <!-- Front-End Skills -->
+        <div class="skill-item">
+            <i class="fas fa-code"></i> Front-End:
+            <p>HTML, CSS, JavaScript, React.js</p>
+        </div>
+
+        <!-- Back-End Skills -->
+        <div class="skill-item">
+            <i class="fas fa-server"></i> Back-End:
+            <p>Python, JavaScript</p>
+        </div>
+
+        <!-- Database Skills -->
+        <div class="skill-item">
+            <i class="fas fa-database"></i> Database:
+            <p>SQL</p>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-item">
+            <i class="fas fa-tools"></i> Tools:
+            <p>PyCharm, Visual Studio Code</p>
+        </div>
+
+        <!-- Version Control -->
+        <div class="skill-item">
+            <i class="fas fa-code-branch"></i> Version Control:
+            <p>Git</p>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-item">
+            <i class="fas fa-users"></i> Soft Skills:
+            <p>Problem-solving, Communication, Teamwork, Quick Learner, Adaptability</p>
+        </div>
+    </div>
+</section>
+
+
+
+   <!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <h2>PROJECTS</h2>
+    <div class="project-list">
+        <!-- Project 1 -->
+        <div class="project-item">
+            <h3>Human Disease Detection Using Machine Learning</h3>
+            <p>Developed a CNN model for accurate disease detection from medical images.</p>
+            <button class="project-link" onclick="openPopup('popup1')">View Project</button>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-item">
+            <h3>Online Shopping Website</h3>
+            <p>Developed an interactive online shopping platform with a seamless user experience.</p>
+            <button class="project-link" onclick="openPopup('popup2')">View Project</button>
+        </div>
+    </div>
+</section>
+
+<!-- Popup for Project 1 -->
+<div id="popup1" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+        <h3>Human Disease Detection Using Machine Learning</h3>
+        <p><strong>Role:</strong> Machine Learning Developer</p>
+        <p><strong>Duration:</strong> November 2023 – May 2024</p>
+        <p><strong>Technologies</strong></p>
+        <ul>
+            <li><strong>Languages:</strong> HTML, CSS, JavaScript, Python, SQL</li>
+            <li><strong>Frameworks:</strong> React.js, TensorFlow, Keras</li>
+            <li><strong>Tools:</strong> Git, Visual Studio Code, PyCharm</li>
+        </ul>
+        <h4>Description</h4>
+        <p>HealthCare Monitor is an advanced application leveraging deep learning for health management and disease detection. It identifies critical health conditions, including <strong>Brain tumors, COVID-19, Lung cancer, and Skin cancer</strong>, while calculating essential metrics like BMI and blood pressure. Utilizing Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs), the app provides accurate disease diagnosis and personalized wellness assessments. By analyzing extensive health data, it empowers users to take control of their health and supports healthcare professionals in making informed decisions, paving the way for personalized medicine and preventive healthcare.</p>
+        <h4>Key Features</h4>
+<ul>
+    <li><strong>CNN Model Development:</strong> Developed a Convolutional Neural Network (CNN) model for precise disease detection from medical imaging.</li>
+    <li><strong>Data Preprocessing:</strong> Implemented extensive data preprocessing techniques to enhance model accuracy and reliability.</li>
+    <li><strong>Data Augmentation:</strong> Utilized data augmentation strategies to improve the model's robustness and generalization.</li>
+    <li><strong>Model Validation:</strong> Achieved high diagnostic precision through comprehensive model validation methodologies.</li>
+    <li><strong>Personalized Health Insights:</strong> Delivered tailored wellness assessments based on user-specific health data and metrics.</li>
+    <li><strong>Real-time Monitoring:</strong> Enabled continuous monitoring of vital signs and health parameters for proactive health management.</li>
+</ul>
+
+    </div>
+</div>
+
+<!-- Popup for Project 2 -->
+<div id="popup2" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup('popup2')">&times;</span>
+        <h3>Online Shopping Website</h3>
+        <p><strong>Role:</strong> Full Stack Developer</p>
+        <p><strong>Duration:</strong> July 2024 – August 2024</p>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, React.js</p>
+        <h4>Description</h4>
+        <p>Designed and developed an interactive and responsive online shopping website, focusing on user experience and seamless functionality.</p>
+        <h4>Key Features</h4>
+        <ul>
+            <li><strong>User Interface:</strong> Designed responsive and interactive user interfaces using HTML, CSS, and JavaScript.</li>
+            <li><strong>Dynamic Components:</strong> Built dynamic components and managed state with React.js for a seamless user experience.</li>
+            <li><strong>Core Functionality:</strong> Integrated essential features such as product listings, search functionality, and shopping cart.</li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- Internship Section -->
+<section id="internship" class="internship-section">
+    <h1>INTERNSHIPS</h1>
+    <div class="internship-item">
+        <h3>Database and Web Development Intern</h3>
+        <p><strong>CodeBind Technologies, Chennai, India</strong></p>
+        <p><em>February 2023 - May 2023</em></p>
+        <h4>Responsibilities:</h4>
+        <ul>
+            <li>
+                <strong>SQL Development:</strong> Developed and optimized SQL queries to efficiently manage and retrieve data, significantly enhancing the performance of backend systems for various web projects.
+            </li>
+            <li>
+                <strong>Web Application Management:</strong> Managed web application functionality by implementing user-friendly features and optimizing database interactions, resulting in a more responsive and efficient user experience.
+            </li>
+        </ul> 
+    </div>
+</section>
+
+
+
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>CONTACT</h2>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:sujithe2003@gmail.com">sujithe2003@gmail.com</a></p>
+        <p><i class="fas fa-map-marker-alt"></i>Bengaluru, India</p>
+        
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/sujith-e-1b6014252" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/sujith003" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://x.com/Sujith22705164" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/_.suji.th__" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <!-- WhatsApp Shortcut -->
+<div class="whatsapp-shortcut">
+    <a href="https://wa.me/9585578439" target="_blank" class="whatsapp-link">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+
+<!-- loading animation -->
+
+<div class="loading-container">
+    <div class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+</div>
+
+
+    
+
+
+    <!-- Footer Section -->
+<footer class="footer-section">
+    <div class="footer-content">
+        <p>&copy; 2024 SUJITH E. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
