@@ -83,6 +83,7 @@ body {
 
 }
 
+
 /* Neon text effect */
 .neon-text {
     font-size: 3rem; /* Set the font size */
@@ -423,7 +424,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     width: 90%; /* Responsive width */
-    max-width: 600px; /* Max width */
+    max-width: 900px; /* Max width */
     max-height: 80%; /* Set a maximum height */
     overflow-y: auto; /* Enable vertical scrolling */
     text-align: left;
@@ -466,18 +467,60 @@ body {
 
 .close-btn:hover {
     color: #c0392b; /* Darker shade on hover */
+}/* Styling for the entire images list container */
+.images-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-/* Animation for popup appearance */
-@keyframes fadeIn {
-    from {
-        opacity: 0; /* Start with opacity 0 */
-    }
-    to {
-        opacity: 1; /* End with opacity 1 */
-    }
+/* Styling for each image container */
+.images {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    background-color: #f9f9f9;
 }
 
+/* Hover effect to enlarge the images slightly */
+.images:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for the description under each image */
+.para {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.para p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for the first six images (larger size) */
+.images:nth-child(-n+6) {
+    width: 200px; /* Adjust to set a consistent larger size */
+}
+
+/* Styling for the last four images (smaller size) */
+.images:nth-last-child(-n+4) {
+    width: 600px; /* Adjust to set a consistent smaller size */
+}
+
+/* Image styling to fill the container's width */
+.images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 /* Internship Section Styles */
 .internship-section {
     background-color: #f9f9f9; /* Light background color */
@@ -540,7 +583,7 @@ body {
     background: linear-gradient(135deg, rgba(50, 70, 90, 1) 0%, rgba(50, 20, 20, 0.9) 100%); /* Fading color gradient */
     text-align: center;
     border-radius: 15px;
-    max-width: 600px; /* Reduced max-width */
+    max-width: 100%; /* Reduced max-width */
     margin: 20px auto; /* Adjusted margin */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     font-family: 'Arial', sans-serif;
@@ -548,17 +591,12 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-section:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
 
 .contact-section h2 {
-    font-size: 36px;
+    font-size: 27px;
     color: #ffffff; /* Blue color for section heading */
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-transform: uppercase; /* Capitalize heading */
     letter-spacing: 2px; /* Increase spacing between letters */
 }
