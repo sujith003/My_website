@@ -462,7 +462,12 @@ body {
     position: absolute;
     top: 15px;
     right: 20px;
-    transition: color 0.3s; /* Smooth color transition */
+    transition: color 0.3s; 
+    /* Smooth color transition */
+    
+}
+.linktext{
+    text-decoration: none;
 }
 
 .close-btn:hover {
