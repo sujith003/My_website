@@ -83,6 +83,11 @@ body {
 
 }
 
+.illus{
+    height: 200px;
+    width: 200px;
+}
+
 
 /* Neon text effect */
 .neon-text {
