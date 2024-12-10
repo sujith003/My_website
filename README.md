@@ -40,6 +40,13 @@ This project is a personal portfolio website designed to showcase the skills, pr
 - Download Resume Feature
 - The resume is available for download in PDF format. Users can click the Download Resume button located in the Contact section to obtain a copy of the resume.
 
+## Demo
+
+You can try out the live demo of the application here:
+
+[Live Demo](https://sujith-flame.vercel.app/)
+
+
 ## Installation
 
 1. **Clone the repository**:
