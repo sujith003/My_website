@@ -1,54 +1,57 @@
-# My Portfolio
+# Sujith E | Portfolio
 
-## About
+Personal portfolio for Sujith E, positioned around Oracle SQL and database development, with Python, REST APIs and hands-on application support experience.
 
-This project is a personal portfolio website designed to showcase the skills, projects, and experiences of Sujith E. The website features a modern and interactive layout with a focus on user experience. Users can navigate through various sections, including Home, Skills, Projects, Internships, and Contact information. The website is built using HTML, CSS, and JavaScript, incorporating a dark mode toggle, smooth scrolling effects, pop-up modals for project details, and a resume download feature.
+**Live:** https://sujith-flame.vercel.app/
 
-## Features
+## Highlights
 
-- **Dark Mode Toggle**: Users can switch between light and dark themes for better readability and user preference.
-- **Responsive Navigation Bar**: The navigation bar hides on scroll down and reappears on scroll up, providing a clean and unobstructed view of the content.
-- **Popup Modals**: Clickable project items open pop-ups displaying detailed information, including descriptions, technologies used, and application views.
-- **Loading Screen**: A loading animation is displayed while the page is loading, enhancing the user experience.
-- **Download Resume**: Users can download a PDF version of the resume for easy access to professional information.
-- **Social Media Links**: Direct links to social media profiles (LinkedIn, GitHub, etc.) for networking opportunities.
+- Oracle SQL-focused hero with a query-editor panel that types out and shows a result grid
+- Interactive SQL workbench covering JOIN, GROUP BY, subqueries, CTEs, window functions and transactions (illustrative sample tables, not company data)
+- Skills dashboard in three tiers: Oracle SQL and databases (primary), Python, web and APIs (secondary), application support, Linux and ITSM (supporting)
+- Experience split into Oracle WMS and DMS modules, plus work common to both
+- Projects: Inventory Reconciliation & Data Validation, Enga Ooru Vengamooru, Online Shopping Website, Human Disease Detection, Application Monitoring & Production Support
+- Light and dark themes (follows system preference, remembers the choice)
+- Floating pill navigation on desktop, bottom dock on mobile
+- Scroll reveal animations and reduced-motion support
 
-## Technologies Used
+## Tech stack
 
-- **HTML**: For the structure of the web pages.
-- **CSS**: For styling and layout.
-- **JavaScript**: For interactivity, including dark mode functionality and pop-up management.
-- **Font Awesome**: For icons and social media links.
+Static site: HTML, CSS and vanilla JavaScript. No build step and no dependencies apart from the Google Fonts stylesheet (Instrument Sans, Instrument Serif, JetBrains Mono).
 
-## Project Overview
-**Home Section**
-- A welcoming introduction with personal information, including name, location, phone number, and email.
-- Links to social media profiles (LinkedIn, GitHub).
+## Project structure
 
-**Skills Section**
-- A list of technical skills categorized into Front-End, Back-End, Database, Tools, Version Control, and Soft Skills.
+```text
+index.html   Page content and structure
+style.css    Design tokens (dark/light), layout and components
+script.js    Theme toggle, navigation indicator, scroll reveal, SQL workbench, copy-email, project dialog
+```
 
-**Projects Section**
-**Displays two key projects:**
-- **Human Disease Detection Application Based On Deep Learning:** A CNN-based model for disease detection from medical images.
-- **Online Shopping Website:** An interactive platform designed for an optimal shopping experience.
+Other files used by the site:
 
-**Internships Section**
-- Details about internship experiences, responsibilities, and skills acquired.
-**Contact Section:**
-- Email address and location with links to social media for easy networking.
-- Download Resume Feature
-- The resume is available for download in PDF format. Users can click the Download Resume button located in the Contact section to obtain a copy of the resume.
+- `Sujith_E_Application_Support_Resume.pdf`: linked from the Resume buttons
+- `log.jpg`, `reg.jpg`, `home.jpg`, `health.jpg`, `medi.jpg`, `lang.jpg`, `medicine.jpg`, `brain.jpg`, `lung.jpg`, `covid.jpg`, `certificate.jpg`: screenshots and certificate shown in the Human Disease Detection dialog
 
-## Demo
+## Run locally
 
-You can try out the live demo of the application here:
+```bash
+python3 -m http.server 8000
+```
 
-[Live Demo](https://sujith-flame.vercel.app/)
+Then open http://localhost:8000.
 
+## Deployment
 
-## Installation
+Deployed on Vercel as a static site. Push to the main branch to redeploy.
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/sujith003/My_website.git
+## Editing content
+
+- Text and links: `index.html`
+- Colors and fonts: the `:root` and `[data-theme]` variables at the top of `style.css`
+- SQL workbench examples: the `EX` array in `script.js`
+
+## Contact
+
+- Email: esujith1103@gmail.com
+- LinkedIn: https://www.linkedin.com/in/sujith-e-1b6014252
+- GitHub: https://github.com/sujith003
